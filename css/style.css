@@ -65,7 +65,7 @@ text-decoration: none;
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
   .navbar {
     overflow: hidden;
     background-color: #333;
@@ -76,7 +76,7 @@ text-decoration: none;
     display: block;
   }
 
-}
+}*/
 .navbar input[type=text] {
     float: right;
     padding: 6px;
@@ -85,7 +85,7 @@ text-decoration: none;
     margin-right: 16px;
     font-size: 16px;
 }
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     .topnav a, .topnav input[type=text] {
         float: none;
         display: block;
@@ -98,7 +98,7 @@ text-decoration: none;
         border: 1px solid #ccc;
     
 	}
-}
+}*/
 
 .dropdown {
     float: left;
