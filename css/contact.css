@@ -1,0 +1,57 @@
+body{
+	background-size:auto;
+	/*background-image: url("laptop.jpg");*/
+ background-color: #4e687c;
+}
+table{
+	font-family: arial, sans-serif;
+    border-collapse: collapse;
+	float:left;
+	margin-left:175px;
+	height:500px;  
+}
+
+td, th {
+   font-size:25px;
+    text-align:center;
+	text-decoration:none;
+	color:black;
+}
+#container{
+width: 1000px; 
+	  margin: 0 auto;  
+  }
+ a {
+text-decoration: none;
+}
+.homebutton{
+	background-color:white;
+	border:1px solid #4e687c;
+	width:10%;
+	border-radius:10px;
+	float:left;
+}
+.salebutton{
+	float:right;
+	background-color:white;
+	border:1px solid #4e687c;
+	width:18%;
+	border-radius:10px;
+	
+}
+.box{
+	background-color:white;
+	border:2px solid #0063D2;
+	border-radius:50px;
+	height:650px;
+	width:1000px;
+	margin: 0 auto;
+	   border: 1px solid;
+}
+.boxheading{
+	margin-left:350px;
+	font-size:50px;
+	overflow:hidden;
+}
+.sendbutton{background-color:#4e687c;
+}

@@ -1,0 +1,15 @@
+*{
+background-color:#4e687c;
+}
+.about{
+  width: 800px;
+  height: 200px;
+  padding: 50px;
+  border: 1px solid black;
+  margin-left:180px;
+  margin-top:50px;
+  background-color:white;
+}
+.image{
+		 margin-left:280px;
+		 }

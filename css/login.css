@@ -1,0 +1,64 @@
+
+.header{
+		width:100%;
+		color: blue;
+		text-align:center;
+		}
+
+
+input[type=text], input[type=password] {
+    background-color: white; /* Fallback color */
+  
+  color: black;
+  font-weight: bold;
+
+	width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+	text-align:center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    
+}
+button {
+    background-color: Green;
+    color: white;
+    padding: 14px 20px;
+    margin-right:500px;
+	margin-left:480px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+}
+
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.container {
+	 background-image: url("../images/pic.jpg");
+  background-color: #cccccc;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+    padding: 60px;
+}
+
+/* The "Forgot password" text */
+.psw {
+    float: center;
+    padding-left: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}

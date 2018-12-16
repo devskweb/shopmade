@@ -1,0 +1,67 @@
+.image{
+  background-image: url("../images/laptop.jpg");
+ 
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+    padding: 60px;
+}
+
+.sign{
+		float:left;
+		 margin-right: 450px;
+         margin-left: 350px;
+         width: 400px;
+         height: 450px;
+		 color:blue;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         position: relative;
+         padding: 60px;
+
+
+
+		}
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* signup button and add an equal width */
+.signupbtn {
+  float: left;
+  width: 25%;
+}
+
+/* Add padding to container elements */
+
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signupbtn {
+    width: 100%;
+  }
+}

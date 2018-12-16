@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+   <link rel="Stylesheet" href="addproduct.css">
+ </head>
+ <body>
+<div class="image">
+<img src="./images/logo.jpg" alt="shopbybid" width="250" height="100" >
+</div>
+<div class="container">
+<h1 style="text-align:center" >Add Product for Bid</h1>
+ Seller Name<input type="text" placeholder="Your name" name="sellername" value="" required/><br></br>
+ Email <input type="text" placeholder="Enter Email" name="email" value="" required /><br></br>
+  <label style="background-color:white">Choose Image</label><br></br>
+ <input class="image-upload-input" type='file' onchange="readURL(this);" accepts="image/*" /><br></br>
+ Minimum price<input type="text" placeholder="Minimum Prize" name="minprz" value="" required /><br></br>
+ <label style="background-color:white" for="subject">Subject</label>
+ <textarea id="subject" name="subject" placeholder="Write something about product.." style="width:100%"></textarea><br></br>
+<a style="background-color:white" href="login.html"> <input  type="submit" value="Submit"></a>
+ </div>
+ </body>
+ </html>

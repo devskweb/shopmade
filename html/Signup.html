@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="Stylesheet" href="../css/signup.css">
+ </head>
+ <body>
+  <div class="image">
+ <div class="sign" >
+ <script>
+
+     function mynumber(){
+	 var b = document.getElementById("mobilenumber").value;
+	 if(b==""){
+		 document.getElementById("messages")="please fill mobile number";
+	     return false;
+	 }
+	 if(isNaN(b)){
+		 document.getElementById("messages")="Enter only number";
+		 
+	 }
+	 if(b.length<10){
+	 document.getElementById("messages")="mobile number must be 10 digit";
+		 return false;
+	 }
+     if(b.length>10){
+	 document.getElementById("messages")="mobile number must be 10 digit";
+		 return false;
+	 }
+	 if((b.charAt(0)!=9 && b.charAt(0)!=8 && b.charAt(0)!=7)){
+	 document.getElementById("messages")="mobile number must start with 9,8,7";
+	 return false;
+	 }
+	 }
+ 
+ </script>
+  <span id="head1"><h1>
+<img src="../images/logo.jpg" title="ShopByBid.com" alt="ShopByBid.com" width="300" height="150">
+
+</h1>
+</span>
+ <form onsubmit="return mynumber()">
+  <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    Firstname<input type="text" placeholder="Enter First name" name="firstname" required>
+	<br></br>
+    Lastname<input type="text" placeholder="Enter Last name" name="lastname" required>
+	<br></br>
+    Username<input type="text" placeholder="Enter Email" name="email" required>
+    <br></br>
+    Password<input type="password" placeholder="Enter Password" name="psw" required>
+
+     <br></br>
+    Address<input type="text" placeholder="Address" name="a" required>
+    <br></br>
+    Mobileno<input type="text" id="mobilenumber" placeholder="Enter mobile no." value="" required>
+	<span id="messages" style="color:red" > </span>
+	<br></br>
+      <input type="checkbox" checked="checked" name="remember" style="color:black">Terms & condition </input>
+
+      <button type="submit" class="signupbtn"><a href="Login.html">Sign In</a></button>
+	  </form>
+</div>
+</div>
+ </body>
+</html>

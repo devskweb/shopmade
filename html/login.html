@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Login</title>
+ 
+   <link rel="Stylesheet" href="../css/login.css">
+ </head>
+ <body>
+ <div class="container">
+  <div class="header">
+	   <h1> Login </h1>  
+	   <script>
+function myfun(){
+var a = document.myform.uname.value;
+if(a.indexOf('@')<=0){
+document.getElementById("message").innerHTML="Invalid Email";
+return false;
+}
+if(a.charAt(a.length-4)!='.'){
+document.getElementById("message").innerHTML="Invalid Email";
+return false;
+}
+if(a.charAt(a.length-3)!='.'){
+document.getElementById("message").innerHTML="Invalid Email";
+return false;
+}
+
+}
+</script>
+
+ <form name="myform" onsubmit="return myfun()">
+ 
+  <div  style="text-align:center">
+    Username<input type="text"  placeholder="Enter Email" name="uname" value="" required>
+	<span id="message" style="color:red" > </span>
+	<br></br>
+  
+<label for="psw">Password</label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br></br>
+    <button type="submit">Login</button><br></br>
+      
+    
+    <span class="psw"><a href="#">forgot password?</a></span><br></br>
+	<a href="Signup.html">signup</a>
+  </div>
+  </form>
+  </div>
+  </div>
+ </body>
+</html>

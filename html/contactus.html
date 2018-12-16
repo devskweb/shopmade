@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<title>ShopByBid</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="STYLESHEET" href="../css/contact.css">
+
+
+
+</head>
+<body>
+
+ <div id="container">
+ <span class="head1"><h1>
+ <marquee behavior="alternate"  onmouseover="this.stop();" onmouseout="this.start();" >
+<img src="../images/logo.jpg" title="ShopByBid.com" alt="ShopByBid.com" width="250" height="100">  ShopByBid
+</marquee>
+</h1>
+</span>
+<div class="box" >
+<div>
+<a href="../index.html">
+<h1 class="homebutton">HOME</h1>
+</a>
+<a href="../index.html">
+<h1 class="salebutton">PRODUCTS</h1>
+</a>
+<div>
+<div>
+<h2 class="boxheading">Contact form</h2>
+<form action="https://formspree.io/santoshkumar1561997@gmail.com" method="POST" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+return true; }
+</script>
+
+<table >
+<tr> 
+	<td><label for="Name">Name*:</label></td>
+	<td><input name="Name" type="text" maxlength="60" style="width:250px;" /></td> 
+</tr>
+<tr>
+	<td><label for="PhoneNumber">Phone number:</label></td>
+	<td><input name="PhoneNumber" type="text" maxlength="43" style="width:250px;" /></td> 
+</tr>
+<tr> 
+	<td><label for="FromEmailAddress">Email address*:</label></td>
+	<td><input name="FromEmailAddress" type="text" maxlength="90" style="width:250px;" /></td>
+</tr> 
+<tr>
+	<td><label for="Comments">Comments and Messages:</label></td>
+	<td><textarea name="Comments/message" rows="7" cols="40" style="width:350px;"></textarea></td>
+</tr>
+<tr> 
+	<td>* - required fields</td> 
+	<td>
+		<button class="sendbutton" type="submit"><h2>Send/Submit</h2></button>	
+	</td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+</body>
+</html>
+
